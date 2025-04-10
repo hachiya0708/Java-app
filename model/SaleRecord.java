@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
+//せどり状況を記録
 public class SaleRecord {
     private Product product;
     private LocalDate dateSold;

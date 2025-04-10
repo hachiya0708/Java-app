@@ -1,8 +1,14 @@
 package model;
+
+//仕入れ商品
 public class Product {
+    //仕入れ商品名
     private String name;
+    //仕入れ価格
     private int purchasePrice;
+    //販売価格
     private int salePrice;
+    //販売状況（true:販売済み、false:未販売）
     private boolean isSold;
 
     public Product(String name, int purchasePrice, int salePrice) {
@@ -12,10 +18,12 @@ public class Product {
         this.isSold = false;
     }
 
+    //利益を算出
     public int calculateProfit() {
         return salePrice - purchasePrice;
     }
 
+    //商品が売れた時の処理
     public void markAsSold() {
         isSold = true;
     }

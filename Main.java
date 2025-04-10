@@ -5,7 +5,7 @@ import service.SaleServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
-        Product product = new Product("PS5", 40000, 55000);
+        Product product = new Product("卵", 200, 350);
 
         SaleService saleService = new SaleServiceImpl();
         SaleRecord record = saleService.sell(product);
